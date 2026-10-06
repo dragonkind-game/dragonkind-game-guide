@@ -1,0 +1,1336 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dragonkind Game Guide – Threshing Routes, Dragon Types & Player Reports</title>
+
+  <meta
+    name="description"
+    content="Explore the Dragonkind Game Guide with community Threshing routes, dragon colors, tail types, player-reported choices, outcomes, and Fourth Wing game tips."
+  />
+
+  <meta
+    name="keywords"
+    content="Dragonkind, Dragonkind game, Dragonkind game guide, Dragonkind guide, Dragonkind routes, Dragonkind Threshing routes, Dragonkind answers, Dragonkind dragon types, Fourth Wing game, Fourth Wing Dragonkind, Threshing game"
+  />
+
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Dragonkind.world" />
+
+  <link
+    rel="canonical"
+    href="https://dragonkind-game.github.io/dragonkind-game-guide/"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dragonkind Game Guide – Threshing Routes & Dragon Types" />
+  <meta
+    property="og:description"
+    content="Explore community-reported Dragonkind Threshing routes, dragon colors, tail types, choices, and outcomes."
+  />
+  <meta
+    property="og:url"
+    content="https://dragonkind-game.github.io/dragonkind-game-guide/"
+  />
+  <meta
+    property="og:image"
+    content="https://dragonkind-game.github.io/dragonkind-game-guide/scene-feathertail.jpg"
+  />
+  <meta property="og:site_name" content="Dragonkind Game Guide" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dragonkind Game Guide" />
+  <meta
+    name="twitter:description"
+    content="Explore Dragonkind Threshing routes, dragon types, player reports, and community game guides."
+  />
+  <meta
+    name="twitter:image"
+    content="https://dragonkind-game.github.io/dragonkind-game-guide/scene-feathertail.jpg"
+  />
+
+  <meta name="theme-color" content="#090b10" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dragonkind Game Guide",
+    "url": "https://dragonkind-game.github.io/dragonkind-game-guide/",
+    "description": "Unofficial community Dragonkind game guide featuring Threshing routes, dragon types, player-reported choices, and outcomes.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Dragonkind Game Guide",
+      "url": "https://dragonkind-game.github.io/dragonkind-game-guide/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Dragonkind"
+      },
+      {
+        "@type": "Thing",
+        "name": "Fourth Wing"
+      },
+      {
+        "@type": "Thing",
+        "name": "Threshing"
+      }
+    ],
+    "mainEntity": {
+      "@type": "CreativeWork",
+      "name": "Dragonkind Community Guide",
+      "url": "https://dragonkind.world/"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090b10;
+      --bg-soft: #0f131b;
+      --panel: rgba(20, 24, 34, 0.76);
+      --panel-solid: #121722;
+      --text: #f5f3ee;
+      --muted: #a6adba;
+      --line: rgba(255, 255, 255, 0.10);
+      --gold: #d9b574;
+      --gold-light: #f0d8a1;
+      --red: #922b32;
+      --red-deep: #5d171c;
+      --white: #ffffff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(110, 33, 39, 0.22), transparent 28%),
+        radial-gradient(circle at 15% 30%, rgba(217, 181, 116, 0.08), transparent 24%),
+        var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header {
+      position: absolute;
+      z-index: 20;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 24px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(240, 216, 161, 0.35);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(9, 11, 16, 0.45);
+      backdrop-filter: blur(12px);
+      box-shadow: inset 0 0 24px rgba(217, 181, 116, 0.06);
+    }
+
+    .brand span:last-child {
+      color: var(--white);
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: #e8e1d7;
+      padding: 11px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(9, 11, 16, 0.3);
+      backdrop-filter: blur(12px);
+      transition: all 0.25s ease;
+    }
+
+    .nav-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(240, 216, 161, 0.45);
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 790px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background-image: url("./scene-feathertail.jpg");
+      background-size: cover;
+      background-position: center 38%;
+      background-repeat: no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 7, 11, 0.98) 0%,
+          rgba(5, 7, 11, 0.90) 32%,
+          rgba(5, 7, 11, 0.53) 60%,
+          rgba(5, 7, 11, 0.28) 100%
+        );
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: auto 0 0;
+      height: 240px;
+      background: linear-gradient(to bottom, transparent, var(--bg));
+    }
+
+    .hero-content {
+      padding-top: 120px;
+      padding-bottom: 100px;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 24px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(240, 216, 161, 0.22);
+      background: rgba(10, 12, 18, 0.52);
+      backdrop-filter: blur(12px);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 14px rgba(217, 181, 116, 0.8);
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(58px, 8vw, 104px);
+      line-height: 0.94;
+      letter-spacing: -0.045em;
+      max-width: 820px;
+      margin-bottom: 26px;
+      text-wrap: balance;
+    }
+
+    h1 .accent {
+      color: var(--gold-light);
+      text-shadow: 0 8px 35px rgba(217, 181, 116, 0.12);
+    }
+
+    .hero-subtitle {
+      max-width: 680px;
+      color: #d2d3d7;
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.65;
+      margin-bottom: 38px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .primary-cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 13px;
+      min-height: 70px;
+      padding: 0 32px;
+      border-radius: 14px;
+      background:
+        linear-gradient(135deg, #f0d49a, #c99d55);
+      color: #17120a;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      box-shadow:
+        0 20px 60px rgba(196, 149, 77, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.65);
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+    }
+
+    .primary-cta:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 26px 70px rgba(196, 149, 77, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.65);
+      filter: brightness(1.05);
+    }
+
+    .primary-cta .arrow {
+      font-size: 24px;
+      transition: transform 0.25s ease;
+    }
+
+    .primary-cta:hover .arrow {
+      transform: translateX(5px);
+    }
+
+    .secondary-cta {
+      display: inline-flex;
+      min-height: 70px;
+      padding: 0 25px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 14px;
+      background: rgba(10, 12, 18, 0.52);
+      backdrop-filter: blur(12px);
+      font-weight: 800;
+      color: #f0eee9;
+      transition: all 0.25s ease;
+    }
+
+    .secondary-cta:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(240, 216, 161, 0.38);
+      transform: translateY(-2px);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin-top: 38px;
+      color: #a9acb5;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-meta i {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      opacity: 0.8;
+    }
+
+    /* Sections */
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    .section-kicker {
+      margin-bottom: 12px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.03;
+      letter-spacing: -0.035em;
+      margin-bottom: 18px;
+    }
+
+    .section-copy {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 720px;
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .feature-card {
+      position: relative;
+      padding: 30px;
+      min-height: 280px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.02)
+        );
+      overflow: hidden;
+      transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .feature-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      top: -50px;
+      right: -40px;
+      background: rgba(217, 181, 116, 0.07);
+      filter: blur(10px);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(217, 181, 116, 0.32);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.075),
+          rgba(255, 255, 255, 0.025)
+        );
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      margin-bottom: 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(217, 181, 116, 0.09);
+      border: 1px solid rgba(217, 181, 116, 0.14);
+      font-size: 24px;
+    }
+
+    .feature-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+      letter-spacing: -0.015em;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    .card-link {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--gold-light);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    /* Route band */
+    .route-band {
+      padding: 20px 0 100px;
+    }
+
+    .route-panel {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--panel-solid);
+      box-shadow: var(--shadow);
+    }
+
+    .route-copy {
+      padding: 60px;
+    }
+
+    .route-copy h2 {
+      font-size: clamp(38px, 4vw, 58px);
+    }
+
+    .route-copy p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .route-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .route-list span {
+      color: #d6d7da;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 15px;
+    }
+
+    .route-list span::before {
+      content: "✦";
+      color: var(--gold);
+    }
+
+    .route-visual {
+      min-height: 480px;
+      background:
+        linear-gradient(180deg, rgba(5, 7, 10, 0.08), rgba(5, 7, 10, 0.68)),
+        url("./scene-feathertail.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .route-visual-label {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      color: #f0eee9;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(6, 8, 12, 0.62);
+      backdrop-filter: blur(12px);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    /* Dragon chips */
+    .dragon-types {
+      padding: 90px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.018);
+    }
+
+    .type-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .type-pill {
+      padding: 22px 14px;
+      text-align: center;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.025);
+      font-weight: 800;
+      transition: all 0.2s ease;
+    }
+
+    .type-pill:hover {
+      transform: translateY(-3px);
+      border-color: rgba(217, 181, 116, 0.28);
+      background: rgba(217, 181, 116, 0.055);
+    }
+
+    /* FAQ */
+    .faq {
+      display: grid;
+      gap: 12px;
+      max-width: 900px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.026);
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 21px 24px;
+      cursor: pointer;
+      list-style: none;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    /* Final CTA */
+    .final-cta {
+      padding: 50px 0 110px;
+    }
+
+    .final-panel {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 80px 30px;
+      border: 1px solid rgba(217, 181, 116, 0.18);
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at center top, rgba(217, 181, 116, 0.16), transparent 35%),
+        linear-gradient(145deg, #17110e, #0e1118 58%, #0b0e13);
+    }
+
+    .final-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent, rgba(255,255,255,.025), transparent);
+    }
+
+    .final-panel h2 {
+      max-width: 780px;
+      margin: 0 auto 18px;
+    }
+
+    .final-panel p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 32px;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 0 44px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      color: #858b96;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero {
+        min-height: 740px;
+        background-position: 60% center;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(5, 7, 11, 0.97) 0%,
+            rgba(5, 7, 11, 0.88) 48%,
+            rgba(5, 7, 11, 0.53) 100%
+          );
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .route-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .route-visual {
+        min-height: 380px;
+      }
+
+      .type-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(calc(100% - 28px), var(--max-width));
+      }
+
+      .site-header {
+        padding-top: 18px;
+      }
+
+      .brand span:last-child {
+        display: none;
+      }
+
+      .nav-link {
+        padding: 9px 13px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 800px;
+        background-position: 63% center;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(
+            180deg,
+            rgba(5, 7, 11, 0.76) 0%,
+            rgba(5, 7, 11, 0.64) 22%,
+            rgba(5, 7, 11, 0.9) 58%,
+            rgba(5, 7, 11, 0.98) 100%
+          );
+      }
+
+      .hero-content {
+        padding-top: 150px;
+        padding-bottom: 70px;
+      }
+
+      h1 {
+        font-size: clamp(52px, 17vw, 74px);
+      }
+
+      .hero-subtitle {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .primary-cta,
+      .secondary-cta {
+        width: 100%;
+      }
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .route-copy {
+        padding: 34px 25px;
+      }
+
+      .route-visual {
+        min-height: 300px;
+      }
+
+      .type-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .final-panel {
+        padding: 60px 22px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a
+        class="brand"
+        href="https://dragonkind.world/"
+        aria-label="Visit Dragonkind.world"
+      >
+        <span class="brand-mark">🐉</span>
+        <span>DRAGONKIND GUIDE</span>
+      </a>
+
+      <a
+        class="nav-link"
+        href="https://dragonkind.world/"
+        target="_blank"
+        rel="noopener"
+      >
+        Visit Dragonkind.world ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Community-built Dragonkind Guide
+          </div>
+
+          <h1>
+            Survive the
+            <span class="accent">Threshing.</span>
+            Find Your Dragon.
+          </h1>
+
+          <p class="hero-subtitle">
+            Explore the Dragonkind game with community-reported Threshing routes,
+            dragon colors, tail types, choices, encounters, and player outcomes.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="primary-cta"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              Explore Dragonkind.world
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="secondary-cta" href="#guide">
+              Explore the Guide
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span><i></i> Threshing Route Atlas</span>
+            <span><i></i> Dragon Types</span>
+            <span><i></i> Player Reports</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide Cards -->
+    <section class="section" id="guide">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">Dragonkind Game Guide</div>
+
+          <h2>
+            Map the Threshing.
+            Understand the outcomes.
+          </h2>
+
+          <p class="section-copy">
+            Dragonkind.world organizes community reports into a practical guide
+            for players comparing routes, dragon encounters, choices, and
+            reported results.
+          </p>
+        </div>
+
+        <div class="card-grid">
+
+          <article class="feature-card">
+            <div class="card-icon">🗺️</div>
+
+            <h3>Threshing Route Atlas</h3>
+
+            <p>
+              Compare player-reported paths through the Threshing, including
+              encounters, deaths, bonding results, and alternative outcomes.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              Explore Dragonkind routes →
+            </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon">🐉</div>
+
+            <h3>Dragon Types & Colors</h3>
+
+            <p>
+              Explore Black, Blue, Green, Red, Orange, and Brown dragons along
+              with the tail types reported by the Dragonkind community.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/dragonkind-dragon-types"
+              target="_blank"
+              rel="noopener"
+            >
+              View Dragonkind dragon types →
+            </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon">⚔️</div>
+
+            <h3>How to Play Dragonkind</h3>
+
+            <p>
+              Learn how choices, routes, encounters, deaths, retries, and
+              dragon bonding fit into the Dragonkind gameplay experience.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/how-to-play-dragonkind"
+              target="_blank"
+              rel="noopener"
+            >
+              Read how to play →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Route Panel -->
+    <section class="route-band">
+      <div class="container">
+
+        <div class="route-panel">
+
+          <div class="route-copy">
+            <div class="section-kicker">Dragonkind Threshing Routes</div>
+
+            <h2>
+              There may not be one perfect answer.
+            </h2>
+
+            <p>
+              Community reports can sometimes produce different outcomes from
+              similar choices. Instead of treating every route as guaranteed,
+              Dragonkind.world maps the evidence and lets players compare
+              what actually happened.
+            </p>
+
+            <div class="route-list">
+              <span>Community-mapped routes</span>
+              <span>Player-reported choices</span>
+              <span>Dragon encounters</span>
+              <span>Reported deaths</span>
+              <span>Bonding outcomes</span>
+              <span>Possible luck-based branches</span>
+            </div>
+
+            <a
+              class="primary-cta"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              Open the Route Atlas
+              <span class="arrow">→</span>
+            </a>
+          </div>
+
+          <div
+            class="route-visual"
+            role="img"
+            aria-label="Dragonkind game guide featuring a dragon scene from the Threshing"
+          >
+            <div class="route-visual-label">
+              Community evidence, not guaranteed outcomes
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Dragon Types -->
+    <section class="dragon-types">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">Dragonkind Dragon Types</div>
+
+          <h2>
+            Which dragon will find you?
+          </h2>
+
+          <p class="section-copy">
+            Dragonkind community reports currently track six major dragon
+            colors and multiple tail types across different player results.
+          </p>
+        </div>
+
+        <div class="type-grid">
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            ⚫ Black
+          </a>
+
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            🔵 Blue
+          </a>
+
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            🟢 Green
+          </a>
+
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            🔴 Red
+          </a>
+
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            🟠 Orange
+          </a>
+
+          <a
+            class="type-pill"
+            href="https://dragonkind.world/dragonkind-dragon-types"
+            target="_blank"
+            rel="noopener"
+          >
+            🟤 Brown
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEO Content -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">Dragonkind Answers & Choices</div>
+
+          <h2>
+            Compare choices instead of trusting one route.
+          </h2>
+
+          <p class="section-copy">
+            Players searching for Dragonkind answers often want the exact path
+            to a Black Dragon, Blue Dragon, or another outcome. Community
+            evidence suggests it is more useful to compare multiple runs,
+            including conflicting results, before assuming a route is
+            guaranteed.
+          </p>
+        </div>
+
+        <div class="card-grid">
+
+          <article class="feature-card">
+            <div class="card-icon">🔍</div>
+
+            <h3>Dragonkind Answers</h3>
+
+            <p>
+              Compare reported choices and outcomes to understand which paths
+              repeatedly appear in successful runs.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              Compare player reports →
+            </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon">⚫</div>
+
+            <h3>Black Dragon Routes</h3>
+
+            <p>
+              Looking for a Black Dragon? Compare community-reported routes
+              rather than relying on a single claimed answer.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              Explore reported routes →
+            </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon">📊</div>
+
+            <h3>Player Outcomes</h3>
+
+            <p>
+              Successful bonds, deaths, failed paths, and conflicting results
+              all help reveal how the Threshing may work.
+            </p>
+
+            <a
+              class="card-link"
+              href="https://dragonkind.world/"
+              target="_blank"
+              rel="noopener"
+            >
+              View the community atlas →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">FAQ</div>
+
+          <h2>
+            Dragonkind questions players ask.
+          </h2>
+        </div>
+
+        <div class="faq">
+
+          <details>
+            <summary>What is Dragonkind?</summary>
+            <p>
+              Dragonkind is an interactive experience centered around the
+              Threshing, where players make choices, face dangerous encounters,
+              and may ultimately bond with a dragon.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where can I find a Dragonkind game guide?</summary>
+            <p>
+              Dragonkind.world provides an unofficial community guide covering
+              Threshing routes, dragon types, player-reported choices, deaths,
+              and bonding outcomes.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is there a Dragonkind route map?</summary>
+            <p>
+              Yes. The Dragonkind Threshing Route Atlas organizes community
+              reports so players can compare routes and outcomes across
+              different runs.
+            </p>
+          </details>
+
+          <details>
+            <summary>What dragon colors are tracked?</summary>
+            <p>
+              The community guide currently tracks Black, Blue, Green, Red,
+              Orange, and Brown dragons.
+            </p>
+          </details>
+
+          <details>
+            <summary>Are Dragonkind routes guaranteed?</summary>
+            <p>
+              Player reports can conflict, so community-documented routes
+              should be treated as evidence rather than guaranteed outcomes.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container">
+
+        <div class="final-panel">
+
+          <div class="section-kicker">Enter the Threshing</div>
+
+          <h2>
+            Your dragon is waiting somewhere in the route.
+          </h2>
+
+          <p>
+            Explore the full Dragonkind community guide, compare player-reported
+            routes, discover dragon types, and prepare for your next run.
+          </p>
+
+          <a
+            class="primary-cta"
+            href="https://dragonkind.world/"
+            target="_blank"
+            rel="noopener"
+          >
+            Explore Dragonkind.world
+            <span class="arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+
+      <div>
+        Dragonkind Game Guide · Unofficial community resource
+      </div>
+
+      <div class="footer-links">
+        <a href="https://dragonkind.world/" target="_blank" rel="noopener">
+          Dragonkind.world
+        </a>
+
+        <a
+          href="https://dragonkind.world/how-to-play-dragonkind"
+          target="_blank"
+          rel="noopener"
+        >
+          How to Play
+        </a>
+
+        <a
+          href="https://dragonkind.world/dragonkind-dragon-types"
+          target="_blank"
+          rel="noopener"
+        >
+          Dragon Types
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
+```
